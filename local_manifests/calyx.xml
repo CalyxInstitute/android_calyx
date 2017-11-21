@@ -1,0 +1,8 @@
+<manifest>
+
+  <remote name="gh"
+          fetch="https://github.com/" />
+
+  <project name="CalyxInstitute/android_vendor_calyx" path="vendor/calyx" remote="gh" revision="master" />
+
+</manifest>
