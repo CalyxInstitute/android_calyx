@@ -5,3 +5,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/calyx/overlay/common
 
 PRODUCT_PACKAGES += \
 	Updater
+
+PRODUCT_PACKAGES += \
+	Signal
