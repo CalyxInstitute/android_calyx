@@ -10,5 +10,6 @@ PRODUCT_PACKAGES += \
 	Signal \
 	Orbot \
 	Orfox \
+	Orfox-libs \
 	Bitmask \
 	Bitmask-libs
