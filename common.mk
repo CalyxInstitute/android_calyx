@@ -7,4 +7,6 @@ PRODUCT_PACKAGES += \
 	Updater
 
 PRODUCT_PACKAGES += \
-	Signal
+	Signal \
+	Orbot \
+	Orfox
