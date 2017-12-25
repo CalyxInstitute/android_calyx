@@ -55,3 +55,10 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) mkdir -p $(PRODUCT_OUT)/system/app/Bitmask
 	$(hide) $(ACP) -r calyx/apps/Bitmask/lib $(PRODUCT_OUT)/system/app/Bitmask/
 	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Conversations
+LOCAL_SRC_FILES := Conversations/Conversations.apk
+LOCAL_CERTIFICATE := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
+LOCAL_MODULE_CLASS := APPS
+include $(BUILD_PREBUILT)

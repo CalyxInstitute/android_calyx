@@ -12,4 +12,5 @@ PRODUCT_PACKAGES += \
 	Orfox \
 	Orfox-libs \
 	Bitmask \
-	Bitmask-libs
+	Bitmask-libs \
+	Conversations
