@@ -13,4 +13,5 @@ PRODUCT_PACKAGES += \
 	Orfox-libs \
 	Bitmask \
 	Bitmask-libs \
-	Conversations
+	Conversations \
+	k9mail
