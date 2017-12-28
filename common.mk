@@ -15,4 +15,6 @@ PRODUCT_PACKAGES += \
 	Bitmask-libs \
 	Conversations \
 	k9mail \
-	OpenKeychain
+	OpenKeychain \
+	ooniprobe \
+	ooniprobe-libs

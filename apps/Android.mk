@@ -76,3 +76,22 @@ LOCAL_SRC_FILES := OpenKeychain/OpenKeychain.apk
 LOCAL_CERTIFICATE := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
 LOCAL_MODULE_CLASS := APPS
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ooniprobe
+LOCAL_SRC_FILES := ooniprobe/ooniprobe.apk
+LOCAL_CERTIFICATE := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TARGET_ARCH := arm
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ooniprobe-libs
+LOCAL_MODULE_CLASS := FAKE
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(PRODUCT_OUT)/system/app/ooniprobe
+	$(hide) $(ACP) -r calyx/apps/ooniprobe/lib $(PRODUCT_OUT)/system/app/ooniprobe/
+	$(hide) touch $@
