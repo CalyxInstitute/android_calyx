@@ -14,4 +14,5 @@ PRODUCT_PACKAGES += \
 	Bitmask \
 	Bitmask-libs \
 	Conversations \
-	k9mail
+	k9mail \
+	OpenKeychain
