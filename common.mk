@@ -4,7 +4,8 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += calyx/overlay/common
 
 PRODUCT_PACKAGES += \
-	Updater
+	Updater \
+	CalyxLayout
 
 PRODUCT_PACKAGES += \
 	Signal \
