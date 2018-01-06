@@ -95,3 +95,11 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) mkdir -p $(PRODUCT_OUT)/system/app/ooniprobe
 	$(hide) $(ACP) -r calyx/apps/ooniprobe/lib $(PRODUCT_OUT)/system/app/ooniprobe/
 	$(hide) touch $@
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Briar
+LOCAL_SRC_FILES := Briar/Briar.apk
+LOCAL_CERTIFICATE := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
+LOCAL_MODULE_CLASS := APPS
+include $(BUILD_PREBUILT)
+

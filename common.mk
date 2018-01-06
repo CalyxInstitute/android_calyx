@@ -18,4 +18,5 @@ PRODUCT_PACKAGES += \
 	k9mail \
 	OpenKeychain \
 	ooniprobe \
-	ooniprobe-libs
+	ooniprobe-libs \
+	Briar
