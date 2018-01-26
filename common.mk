@@ -11,12 +11,9 @@ PRODUCT_PACKAGES += \
 	Signal \
 	Orbot \
 	Orfox \
-	Orfox-libs \
 	Bitmask \
-	Bitmask-libs \
 	Conversations \
 	k9mail \
 	OpenKeychain \
 	ooniprobe \
-	ooniprobe-libs \
 	Briar
