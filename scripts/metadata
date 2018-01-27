@@ -1,0 +1,28 @@
+apps=(
+  Bitmask
+  Conversations
+  OpenKeychain
+  Signal
+  k9mail
+  ooniprobe
+  Briar
+)
+
+declare -A apks
+apks[Bitmask]=app/build/outputs/apk/production/release/app-production-release.apk
+apks[Conversations]=build/outputs/apk/free/debug/Conversations-1.23.3-free-debug.apk
+apks[OpenKeychain]=OpenKeychain/build/outputs/apk/OpenKeychain-fdroid-release-unsigned.apk
+apks[Signal]=build/outputs/apk/website/release/Signal-website-release-unsigned-4.13.6.apk
+apks[k9mail]=k9mail/build/outputs/apk/k9mail-release-unsigned.apk
+apks[ooniprobe]=app/build/outputs/apk/ooniprobe-android-1.2.3-fdroid.1-release-unsigned.apk
+apks[Briar]=briar-android/build/outputs/apk/release/briar-android-release-unsigned.apk
+
+declare -A buildcmds
+buildcmds[Bitmask]=build
+buildcmds[Conversations]=assembleFreeRelease
+buildcmds[OpenKeychain]=assembleFdroidRelease
+buildcmds[Signal]=build
+buildcmds[k9mail]=build
+buildcmds[ooniprobe]=build
+buildcmds[Briar]=assembleRelease
+
