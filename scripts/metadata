@@ -1,4 +1,4 @@
-apps=(
+src_apps=(
   Bitmask
   Conversations
   OpenKeychain
@@ -6,6 +6,17 @@ apps=(
   k9mail
   ooniprobe
   Briar
+)
+
+dl_apps=(
+  Orfox
+  Orbot
+)
+
+lib_apps=(
+  Bitmask
+  Orfox
+  ooniprobe
 )
 
 declare -A apks
@@ -26,3 +37,11 @@ buildcmds[k9mail]=build
 buildcmds[ooniprobe]=build
 buildcmds[Briar]=assembleRelease
 
+declare -A urls
+urls[Orfox]="https://guardianproject.info/releases/Orfox-v1.4-RC-3.apk"
+urls[Orbot]="https://guardianproject.info/releases/Orbot-15.5.1-RC-2-multi-SDK23.apk"
+
+declare -A libs
+libs[Bitmask]="lib/armeabi-v7a/libopenvpn.so lib/armeabi-v7a/libopvpnutil.so lib/arm64-v8a/libopenvpn.so lib/arm64-v8a/libopvpnutil.so"
+libs[Orfox]="lib/armeabi-v7a/libmozglue.so lib/armeabi-v7a/libplugin-container-pie.so lib/armeabi-v7a/libplugin-container.so"
+libs[ooniprobe]="lib/armeabi-v7a/libmeasurement_kit.so lib/arm64-v8a/libmeasurement_kit.so"
