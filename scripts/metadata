@@ -1,5 +1,4 @@
 src_apps=(
-  Bitmask
   Conversations
   OpenKeychain
   Signal
@@ -9,6 +8,7 @@ src_apps=(
 )
 
 dl_apps=(
+  Bitmask
   Orfox
   Orbot
 )
@@ -40,6 +40,7 @@ buildcmds[Briar]=assembleRelease
 declare -A urls
 urls[Orfox]="https://guardianproject.info/releases/Orfox-v1.4-RC-3.apk"
 urls[Orbot]="https://guardianproject.info/releases/Orbot-15.5.1-RC-2-multi-SDK23.apk"
+urls[Bitmask]="https://dl.bitmask.net/client/android/Bitmask-Android-0.9.8RC1.apk"
 
 declare -A libs
 libs[Bitmask]="lib/armeabi-v7a/libopenvpn.so lib/armeabi-v7a/libopvpnutil.so lib/arm64-v8a/libopenvpn.so lib/arm64-v8a/libopvpnutil.so"
