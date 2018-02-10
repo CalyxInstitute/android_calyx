@@ -33,7 +33,7 @@ buildcmds[Bitmask]=build
 buildcmds[Conversations]=assembleFreeRelease
 buildcmds[OpenKeychain]=assembleFdroidRelease
 buildcmds[Signal]=build
-buildcmds[k9mail]=build
+buildcmds[k9mail]=assembleRelease
 buildcmds[ooniprobe]=build
 buildcmds[Briar]=assembleRelease
 
