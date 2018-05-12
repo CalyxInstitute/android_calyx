@@ -16,7 +16,18 @@ LOCAL_CERTIFICATE := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TARGET_ARCH := arm
+LOCAL_REQUIRED_MODULES := Orbot-libs
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Orbot-libs
+LOCAL_MODULE_CLASS := FAKE
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
+$(LOCAL_BUILT_MODULE):
+	$(hide) mkdir -p $(PRODUCT_OUT)/system/app/Orbot/lib/arm
+	$(hide) $(ACP) calyx/apps/Orbot/lib/armeabi/*.so $(PRODUCT_OUT)/system/app/Orbot/lib/arm/
+	$(hide) touch $@
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := Orfox
