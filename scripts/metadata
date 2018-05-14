@@ -22,7 +22,7 @@ lib_apps=(
 
 declare -A apks
 apks[Bitmask]=app/build/outputs/apk/production/release/app-production-release.apk
-apks[Conversations]=build/outputs/apk/free/release/Conversations-1.23.5-free-release-unsigned.apk
+apks[Conversations]=build/outputs/apk/free/release/Conversations-1.23.8-free-release-unsigned.apk
 apks[OpenKeychain]=OpenKeychain/build/outputs/apk/OpenKeychain-fdroid-release-unsigned.apk
 apks[Signal]=build/outputs/apk/website/release/Signal-website-release-unsigned-4.19.3.apk
 apks[k9mail]=k9mail/build/outputs/apk/k9mail-release-unsigned.apk
