@@ -24,7 +24,7 @@ declare -A apks
 apks[Bitmask]=app/build/outputs/apk/production/release/app-production-release.apk
 apks[Conversations]=build/outputs/apk/free/release/Conversations-1.23.8-free-release-unsigned.apk
 apks[OpenKeychain]=OpenKeychain/build/outputs/apk/OpenKeychain-fdroid-release-unsigned.apk
-apks[Signal]=build/outputs/apk/website/release/Signal-website-release-unsigned-4.19.3.apk
+apks[Signal]=build/outputs/apk/website/release/Signal-website-release-unsigned-4.23.3.apk
 apks[k9mail]=k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
 apks[ooniprobe]=app/build/outputs/apk/release/ooniprobe-android-1.3.1-fdroid.1-release-unsigned.apk
 apks[Briar]=briar-android/build/outputs/apk/release/briar-android-release-unsigned.apk
